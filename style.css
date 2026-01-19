@@ -1,0 +1,102 @@
+/* ===== THEME VARIABLES ===== */
+:root {
+  --bg-color: #f4f6f8;
+  --text-color: #333;
+  --sidebar-bg: #2c3e50;
+  --sidebar-text: #fff;
+  --header-bg: #fff;
+  --box-bg: #fff;
+  --accent: #3498db;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #f1f1f1;
+  --sidebar-bg: #000;
+  --sidebar-text: #fff;
+  --header-bg: #2a2a2a;
+  --box-bg: #2a2a2a;
+  --accent: #9b59b6;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* ===== GRID LAYOUT ===== */
+.dashboard {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 60px 1fr;
+  height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  grid-row: 1 / span 2;
+  background: var(--sidebar-bg);
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: var(--sidebar-text);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: var(--sidebar-text);
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: var(--header-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.header button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* ===== BOXES ===== */
+.box {
+  background: var(--box-bg);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.box h4 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.box p {
+  font-size: 24px;
+  font-weight: bold;
+}
