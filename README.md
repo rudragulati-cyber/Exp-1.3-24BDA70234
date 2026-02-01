@@ -35,4 +35,11 @@ Design and style dashboard boxes using CSS
 
 Use CSS variables for theme management
 
+Learning outcomes - 
+This experiment demonstrates the implementation of a Word Counter web application using basic web technologies.
+
+The application allows the user to enter text into a text area and displays the live word count. A maximum limit of 150 words is enforced. When the user exceeds this limit, the text input is automatically cleared and the word count resets to 0, ensuring controlled input as per the requirement.
+
+The interface is styled with a dark-themed counter bar, closely resembling a real-time dashboard-style component.
+
 Implement light and dark theme switching using JavaScript
